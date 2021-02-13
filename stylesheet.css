@@ -134,8 +134,8 @@ to {
 }
 }
 
-/* begin{loading-display} */
-#loading{
+/* begin{loading_display} */
+#loading_display{
     width: 100vw;
     height: 100vh;
     transition: all 1s;
@@ -153,12 +153,14 @@ to {
 
 /* GRID STYLING */
 .spinner-box {
-width: 300px;
-height: 300px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: transparent;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: 100px;
 }
 
 .leo {
@@ -170,31 +172,31 @@ background-color: transparent;
 }
 
 .blue-orbit {
-    width: 165px;
-    height: 165px;
+    width: 50%;
+    height: 50%;
     border: 1px solid #91daffa5;
-    animation: spin3D 3s linear .2s infinite;
+    animation: spin3D 4s linear .2s infinite;
 }
 
 .green-orbit {
-    width: 120px;
-    height: 120px;
+    width: 40%;
+    height: 40%;
     border: 1px solid #91ffbfa5;
-    animation: spin3D 2s linear 0s infinite;
+    animation: spin3D 3s linear 0s infinite;
 }
 
 .red-orbit {
-    width: 90px;
-    height: 90px;
+    width: 30%;
+    height: 30%;
     border: 1px solid #ffca91a5;
-    animation: spin3D 1s linear 0s infinite;
+    animation: spin3D 2s linear 0s infinite;
 }
 
 .white-orbit {
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 15%;
     border: 2px solid #ffffff;
-    animation: spin3D 10s linear 0s infinite;
+    animation: spin3D 5s linear 0s infinite;
 }
 
 .w1 {
@@ -208,4 +210,31 @@ background-color: transparent;
 .w3 {
     transform: rotate3D(.5, 1, 2, 90deg);
 }
-/* end{loading-display} */
+
+/* begin{loading_title} */
+@keyframes bulge {
+    50% {
+        box-shadow: 0 20px 0 #eee;
+        transform: translateY(-35px);
+    }
+}
+
+.loading_title{
+    display: flex;
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+.loading_title span{
+    height: 100;
+    padding: 0 20px;
+    line-height: 100px;
+    background-color: rgba(90, 130, 190, 0.5);
+    animation: bulge 2s infinite;
+}
+/* end{loading_title} */
+/* end{loading_display} */
