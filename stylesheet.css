@@ -16,6 +16,10 @@ header{
     height: 50px;
     margin-top: 20px;
 }
+header a{
+    color: white;
+    text-decoration: none;
+}
 nav{
     float: right;
     margin-right: 0%;
