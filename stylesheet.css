@@ -65,6 +65,9 @@ footer{
     color: gray;
     margin-bottom: 50px;
 }
+footer a{
+    color: gray;
+}
 footer .footer-left p{
     float: left;
     line-height: 50px;
