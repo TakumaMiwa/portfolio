@@ -28,6 +28,18 @@ nav li{
     float: left;
     padding-left: 20px;
 }
+/* begin{fade-animation} */
+.effect-fade {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: all 1s;
+    transition-delay: 1s;
+}
+.effect-fade.effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* end{fade-animation} */
 .hd-main{
     line-height: 80px;
     margin-bottom: 200px;
@@ -45,7 +57,7 @@ nav li{
     background-color: aqua;
     float: left;
     display: flexbox;
-    margin-right: 50px;
+    margin-right: 70px;
 
 }
 footer{

@@ -1,6 +1,12 @@
+function scroll_effect(){
+  let fade = document.querySelector(".effect-fade");
+  fade.classList.add("effect-scroll");
+}
+
 window.onload = function() {
     const spinner = document.getElementById('loading_display');
     spinner.classList.add('loaded');
+    scroll_effect();
   }
 
 let loading = document.querySelector(".loading_title");
@@ -12,3 +18,5 @@ letters.forEach((letter, i) => {
   span.style.animationDelay = `${i / 5}s`;
   loading.append(span);
 });
+
+
