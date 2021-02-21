@@ -68,14 +68,34 @@ nav li{
 .column{
     width: 45%;
     height: 100%;
-    background-color: aqua;
     float: left;
     display: flexbox;
     margin-right: 5%;
-
+    z-index: 2;
+}
+.white-sheet{
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.white-sheet:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+}
+.column img{
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    opacity: 0.9;
+}
+.column img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
 }
 .description{
-    font-size: 20px;
+    font-size: 30px;
     height: 50px;
 }
 /* end index.html */
@@ -101,6 +121,7 @@ footer{
     bottom: 0;
     height: 50px;
     color: gray;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 footer a{
