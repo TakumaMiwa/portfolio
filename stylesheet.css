@@ -62,17 +62,21 @@ nav li{
     color: #196DF9;
 }
 .contents{
-    height: 200px;
+    height: 500px;
     margin-bottom: 50px;
 }
 .column{
     width: 45%;
-    height: 200px;
+    height: 100%;
     background-color: aqua;
     float: left;
     display: flexbox;
-    margin-right: 70px;
+    margin-right: 5%;
 
+}
+.description{
+    font-size: 20px;
+    height: 50px;
 }
 /* end index.html */
 
