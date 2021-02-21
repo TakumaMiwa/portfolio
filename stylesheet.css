@@ -14,8 +14,11 @@ h1{
 }
 h2{
     font-size: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+h3{
+    font-size: 40px;
 }
 header{
     height: 50px;
@@ -74,6 +77,10 @@ nav li{
 /* end index.html */
 
 /* begin me.html */
+.me{
+    height: 950px;
+    width: 100%;
+}
 .sentence-content{
     width: 50%;
     float: left;
@@ -82,8 +89,12 @@ nav li{
     width: 45%;
     float: right;
 }
+.contact{
+    float: left;
+}
 /* end me.html */
 footer{
+    bottom: 0;
     height: 50px;
     color: gray;
     margin-bottom: 50px;
