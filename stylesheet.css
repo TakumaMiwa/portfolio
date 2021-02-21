@@ -10,7 +10,12 @@ body{
     margin: 0 auto;
 }
 h1{
+    font-size: 80px;
+}
+h2{
     font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 header{
     height: 50px;
@@ -44,6 +49,8 @@ nav li{
     transform: translate(0, 0);
 }
 /* end{fade-animation} */
+
+/* begin index.html */
 .hd-main{
     line-height: 80px;
     margin-bottom: 200px;
@@ -64,6 +71,18 @@ nav li{
     margin-right: 70px;
 
 }
+/* end index.html */
+
+/* begin me.html */
+.sentence-content{
+    width: 50%;
+    float: left;
+}
+.profile-img{
+    width: 45%;
+    float: right;
+}
+/* end me.html */
 footer{
     height: 50px;
     color: gray;
